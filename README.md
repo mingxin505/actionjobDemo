@@ -18,7 +18,7 @@ activeJob 的demo.
 但是不想自己起线程，觉得这很不rails，于是  
 找到了ActiveJob.  
 
-# 原理解释。
+# 原理
 
 sneakers 是activejob的一个后端。对rails 来说和sidekiq一样(通过 jobClass.perform_later触发;回调给ActiveJob::Base的派生类)。  
 一开始以为通过rabbitmq给sneakers监听的queue发消息就能触发回调。这刚好是我要的。  
